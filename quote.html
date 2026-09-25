@@ -6,185 +6,147 @@
 
     <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Request a Quote</title>
+
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+
+    <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
- 
+<body class="site-page">
 
-<body>
+<header class="site-header">
 
- 
+    <div class="brand-wrap">
 
-<header>
+        <img class="brand-logo" src="images/logo.png" alt="Bright Spark Electrical Services logo">
 
- 
+        <div class="brand-text">
 
-    <h1>Request a Quote</h1>
+            <span class="brand-kicker">Bright Spark</span>
 
-    <img src="images/logo.png" style="=width:200px; height:350px;">
+            <h2>Electrical Services</h2>
 
-    <nav>
+        </div>
 
- 
+    </div>
 
-        <a href="index.html">Home</a><br>
 
-        <a href="about.html">About</a><br>
 
-        <a href="services.html">Services</a><br>
+    <nav class="main-nav" aria-label="Main navigation">
 
-        <a href="contact.html">Contact</a><br>
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="quote.html">Request Quote</a>
+
+        <a href="contact.html">Contact</a>
 
         <a href="gallery.html">Gallery</a>
 
     </nav>
 
- 
-
-    <hr>
-
 </header>
 
- 
 
-<form>
 
- 
+<main class="page-shell">
 
-    <label for="fullname">Full Name</label><br>
+    <section class="content-panel">
 
-    <input type="text" id="fullname" name="fullname" required>
+        <p class="eyebrow">Request a quote</p>
 
-    <br><br>
+        <h1>Tell us about your electrical project.</h1>
 
- 
 
-    <label for="email">Email Address</label><br>
 
-    <input type="email" id="email" name="email" required>
+        <form>
 
-    <br><br>
+            <div class="form-grid">
 
- 
+                <div>
 
-    <label for="phone">Phone Number</label><br>
+                    <label for="fullname">Full Name</label>
 
-    <input type="tel" id="phone" name="phone" required>
+                    <input type="text" id="fullname" name="fullname" required>
 
-    <br><br>
+                </div>
 
- 
 
-    <label for="service">Select Service</label><br>
 
-    <select id="service" name="service" required>
+                <div>
 
- 
+                    <label for="email">Email Address</label>
 
-        <option value="">-- Select a Service --</option>
+                    <input type="email" id="email" name="email" required>
 
- 
+                </div>
 
-        <option value="Electrical Installations">
 
-            Electrical Installations
 
-        </option>
+                <div>
 
- 
+                    <label for="phone">Phone Number</label>
 
-        <option value="Fault Finding and Repairs">
+                    <input type="tel" id="phone" name="phone" required>
 
-            Fault Finding and Repairs
+                </div>
 
-        </option>
 
- 
 
-        <option value="Lighting Installation">
+                <div>
 
-            Lighting Installation
+                    <label for="service">Select Service</label>
 
-        </option>
+                    <select id="service" name="service" required>
 
- 
+                        <option value="">-- Select a Service --</option>
 
-        <option value="Electrical Maintenance">
+                        <option value="Electrical Installations">Electrical Installations</option>
 
-            Electrical Maintenance
+                        <option value="Fault Finding and Repairs">Fault Finding and Repairs</option>
 
-        </option>
+                        <option value="Lighting Installation">Lighting Installation</option>
 
- 
+                        <option value="Electrical Maintenance">Electrical Maintenance</option>
 
-        <option value="Emergency Electrical Services">
+                        <option value="Emergency Electrical Services">Emergency Electrical Services</option>
 
-            Emergency Electrical Services
+                    </select>
 
-        </option>
+                </div>
 
- 
+            </div>
 
-    </select>
 
- 
 
-    <br><br>
+            <div>
 
- 
+                <label for="details">Project Details</label>
 
-    <label for="details">Project Details</label><br>
+                <textarea id="details" name="details" placeholder="Please describe the work you require..." required></textarea>
 
- 
+            </div>
 
-    <textarea
 
-            id="details"
 
-            name="details"
+            <button type="submit">Submit Quote Request</button>
 
-            rows="6"
+        </form>
 
-            cols="50"
+    </section>
 
-            placeholder="Please describe the work you require..."
-
-            required>
-
-    </textarea>
-
- 
-
-    <br><br>
-
- 
-
-    <button type="submit">
-
-        Submit Quote Request
-
-    </button>
-
-
-</form>
-
-
-<footer>
-
-    <hr>
-
-    <p>
-
-        Bright Spark Electrical Services |
-
-        Professional Electrical Solutions
-
-    </p>
-
-</footer>
+</main>
 
 </body>
 

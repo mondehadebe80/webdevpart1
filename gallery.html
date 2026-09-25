@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7,121 +6,135 @@
 
     <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Service Gallery</title>
+
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+
+    <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+<body class="site-page">
 
+<header class="site-header">
 
-<body>
+    <div class="brand-wrap">
 
+        <img class="brand-logo" src="images/logo.png" alt="Bright Spark Electrical Services logo">
 
+        <div class="brand-text">
 
-<h1>Service Gallery</h1>
+            <span class="brand-kicker">Bright Spark</span>
 
+            <h2>Electrical Services</h2>
 
+        </div>
 
-<nav>
+    </div>
 
-    <a href="index.html">Home</a>
 
-    <a href="about.html">About</a>
 
-    <a href="services.html">Services</a>
+    <nav class="main-nav" aria-label="Main navigation">
 
-    <a href="gallery.html">Gallery</a>
+        <a href="index.html">Home</a>
 
-    <a href="quote.html">Request Quote</a>
+        <a href="about.html">About</a>
 
-    <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
 
-</nav>
+        <a href="gallery.html">Gallery</a>
 
+        <a href="quote.html">Request Quote</a>
 
+        <a href="contact.html">Contact</a>
 
-<hr>
+    </nav>
 
+</header>
 
 
-<details id="installations">
 
-    <summary><strong>Electrical Installations</strong></summary>
+<main class="page-shell">
 
+    <section class="content-panel">
 
+        <p class="eyebrow">Our work</p>
 
-    <img src="images/installations.jpg" style="=width:200px; height:350px;">
+        <h1>Recent electrical projects and service highlights.</h1>
 
-    <p>Professional installation of wiring, plugs, DB boards and electrical systems.</p>
 
-</details>
 
+        <div class="gallery-grid">
 
+            <article class="gallery-card" id="installations">
 
-<br>
+                <img src="images/installations.jpg" alt="Electrical installation work">
 
+                <h3>Electrical Installations</h3>
 
+                <p>Professional installation of wiring, plugs, DB boards and electrical systems.</p>
 
-<details id="repairs">
+            </article>
 
-    <summary><strong>Fault Finding and Repairs</strong></summary>
 
-    <img src="images/repairs.jfif" style="=width:200px; height:350px;">
 
-    <p>Quick diagnosis and repair of electrical faults.</p>
+            <article class="gallery-card" id="repairs">
 
-</details>
+                <img src="images/repairs.jfif" alt="Electrical repairs and fault finding">
 
+                <h3>Fault Finding and Repairs</h3>
 
+                <p>Quick diagnosis and repair of electrical faults to restore reliability and safety.</p>
 
-<br>
+            </article>
 
 
 
-<details id="lighting">
+            <article class="gallery-card" id="lighting">
 
-    <summary><strong>Lighting Installation</strong></summary>
+                <img src="images/lighting.jpg" alt="Lighting installation">
 
-    <img src="images/lighting.jpg" style="=width:200px; height:350px;">
+                <h3>Lighting Installation</h3>
 
-    <p>Indoor and outdoor lighting solutions.</p>
+                <p>Indoor and outdoor lighting solutions that improve mood, style, and efficiency.</p>
 
-</details>
+            </article>
 
 
 
-<br>
+            <article class="gallery-card" id="maintenance">
 
+                <img src="images/maintenance.jpg" alt="Electrical maintenance work">
 
+                <h3>Electrical Maintenance</h3>
 
-<details id="maintenance">
+                <p>Routine maintenance to ensure electrical safety, performance, and long-term reliability.</p>
 
-    <summary><strong>Electrical Maintenance</strong></summary>
+            </article>
 
-    <img src="images/maintenance.jpg" style="=width:200px; height:350px;">
 
-    <p>Routine maintenance to ensure electrical safety and reliability.</p>
 
-</details>
+            <article class="gallery-card" id="emergency">
 
+                <img src="images/emergency.jfif" alt="Emergency electrical response">
 
+                <h3>Emergency Electrical Services</h3>
 
-<br>
+                <p>24/7 emergency call-out support for urgent faults and unexpected power issues.</p>
 
+            </article>
 
+        </div>
 
-<details id="emergency">
+    </section>
 
-    <summary><strong>Emergency Electrical Services</strong></summary>
-
-    <img src="images/emergency.jfif" style="=width:200px; height:350px;">
-
-    <p>24/7 emergency call-out services.</p>
-
-</details>
-
-
+</main>
 
 </body>
 
