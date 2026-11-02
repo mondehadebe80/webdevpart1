@@ -2,6 +2,8 @@
 
 <html lang="en">
 
+
+
 <head>
 
     <meta charset="UTF-8">
@@ -17,6 +19,8 @@
     <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href=https://unpkg.com/leaflet@1.9.4/dist/leaflet.css integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 
 </head>
 
@@ -108,10 +112,40 @@
 
         </div>
 
+
+
+        <section class="map-panel" aria-labelledby="service-area-title">
+
+            <h2 id="service-area-title">Service Area Map</h2>
+
+            <p class="lead-text">Use the map to find the nearest support point and estimate travel distance from your location.</p>
+
+            <div class="map-controls">
+
+                <label for="map-search">Search address or suburb</label>
+
+                <input id="map-search" type="text" placeholder="e.g. Sandton, Johannesburg" autocomplete="off">
+
+                <button type="button" id="locate-me-btn">Use my location</button>
+
+            </div>
+
+            <div id="service-map" class="service-map" role="region" aria-label="Interactive service area map"></div>
+
+            <p id="map-status" class="map-status" aria-live="polite">Map loading...</p>
+
+        </section>
+
     </section>
 
 </main>
 
+<script src=https://unpkg.com/leaflet@1.9.4/dist/leaflet.js integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script src="js/contact-map.js"></script>
+
 </body>
+
+</html>
 
 </html>
