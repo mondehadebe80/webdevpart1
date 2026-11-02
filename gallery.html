@@ -74,7 +74,7 @@
 
             <article class="gallery-card" id="installations">
 
-                <img src="images/installations.jpg" alt="Electrical installation work">
+                <img src="images/installations.jpg" alt="Electrical installation work" class="lightbox-image" data-caption="Electrical Installations">
 
                 <h3>Electrical Installations</h3>
 
@@ -86,7 +86,7 @@
 
             <article class="gallery-card" id="repairs">
 
-                <img src="images/repairs.jfif" alt="Electrical repairs and fault finding">
+                <img src="images/repairs.jfif" alt="Electrical repairs and fault finding" class="lightbox-image" data-caption="Fault Finding and Repairs">
 
                 <h3>Fault Finding and Repairs</h3>
 
@@ -98,7 +98,7 @@
 
             <article class="gallery-card" id="lighting">
 
-                <img src="images/lighting.jpg" alt="Lighting installation">
+                <img src="images/lighting.jpg" alt="Lighting installation" class="lightbox-image" data-caption="Lighting Installation">
 
                 <h3>Lighting Installation</h3>
 
@@ -110,7 +110,7 @@
 
             <article class="gallery-card" id="maintenance">
 
-                <img src="images/maintenance.jpg" alt="Electrical maintenance work">
+                <img src="images/maintenance.jpg" alt="Electrical maintenance work" class="lightbox-image" data-caption="Electrical Maintenance">
 
                 <h3>Electrical Maintenance</h3>
 
@@ -122,7 +122,7 @@
 
             <article class="gallery-card" id="emergency">
 
-                <img src="images/emergency.jfif" alt="Emergency electrical response">
+                <img src="images/emergency.jfif" alt="Emergency electrical response" class="lightbox-image" data-caption="Emergency Electrical Services">
 
                 <h3>Emergency Electrical Services</h3>
 
@@ -135,6 +135,26 @@
     </section>
 
 </main>
+
+<div class="lightbox" id="gallery-lightbox" aria-hidden="true">
+
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+
+    <figure class="lightbox-content">
+
+        <img id="lightbox-img" src="" alt="">
+
+        <figcaption id="lightbox-caption"></figcaption>
+
+    </figure>
+
+    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+
+</div>
+
+<script src="js/gallery-lightbox.js"></script>
 
 </body>
 
